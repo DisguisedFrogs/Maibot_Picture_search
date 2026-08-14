@@ -25,7 +25,8 @@
   "dependencies": [],
   "capabilities": [
     "llm.generate",
-    "message.get_recent"
+    "message.get_recent",
+    "paths"
   ],
   "i18n": {
     "default_locale": "zh-CN",
