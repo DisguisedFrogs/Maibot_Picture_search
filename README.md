@@ -13,7 +13,7 @@
 
 本插件只负责分析心情，发图链路需要以下外部组件（自行部署）：
 
-1. **mcp-searxng MCP 服务器**：提供 `pixiv_local_rank`（按心情从本地图库选图）、`pixiv_search` 等工具；参考 https://github.com/DisguisedFrogs/Maibot_Picture_search 配套服务（SearXNG 实例 + MCP 服务器，Streamable HTTP 接入 MaiBot）
+1. **mcp-searxng MCP 服务器**：提供 `pixiv_local_rank`（按心情从本地图库选图）、`pixiv_search` 等工具；源码在本仓库 [`mcp-searxng/`](mcp-searxng/) 子目录（SearXNG 实例 + MCP 服务器，Streamable HTTP 接入 MaiBot）
 2. **Pixiv 图库数据库（pixiv.db）**：由 mcp-searxng 的 `pixiv_daily_rank.py` 定时爬取榜图生成（SQLite，含图片评分）
 3. **图库描述预生成**（可选）：`pixiv_describe.py` 为图库图片预生成中文描述，供 R18 图免临时 VLM
 
