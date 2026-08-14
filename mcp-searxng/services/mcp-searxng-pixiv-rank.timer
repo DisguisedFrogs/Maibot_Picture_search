@@ -1,0 +1,10 @@
+[Unit]
+Description=Daily pixiv ranking scrape timer (22:00)
+
+[Timer]
+OnCalendar=*-*-* 22:00:00
+Persistent=true
+Unit=mcp-searxng-pixiv-rank.service
+
+[Install]
+WantedBy=timers.target

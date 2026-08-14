@@ -1,0 +1,7 @@
+.venv/
+__pycache__/
+image_library/
+git_cache/
+logs/
+plan/
+.opencode/

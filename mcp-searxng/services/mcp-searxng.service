@@ -1,0 +1,18 @@
+[Unit]
+Description=MCP SearXNG server (Streamable HTTP)
+After=network.target valkey.service
+Wants=network-online.target
+
+[Service]
+Type=simple
+User=darin
+WorkingDirectory=/home/darin/Projects_WIP/mcp-searxng
+Environment=PIXIV_PHPSESSID=<你的 Pixiv cookie>
+ExecStart=/home/darin/Projects_WIP/mcp-searxng/.venv/bin/python /home/darin/Projects_WIP/mcp-searxng/server.py --http
+Restart=on-failure
+RestartSec=3
+NoNewPrivileges=true
+PrivateTmp=true
+
+[Install]
+WantedBy=multi-user.target

@@ -1,0 +1,16 @@
+[Unit]
+Description=Pixiv %i ranking scrape (top 100 -> image_library/pixiv)
+After=network-online.target
+Wants=network-online.target
+
+[Service]
+Type=oneshot
+User=darin
+WorkingDirectory=/home/darin/Projects_WIP/mcp-searxng
+Environment=PIXIV_PHPSESSID=<你的 Pixiv cookie>
+ExecStart=/home/darin/Projects_WIP/mcp-searxng/.venv/bin/python /home/darin/Projects_WIP/mcp-searxng/scripts/pixiv_daily_rank.py --mode %i
+NoNewPrivileges=true
+PrivateTmp=true
+
+[Install]
+WantedBy=multi-user.target

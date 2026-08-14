@@ -1,0 +1,12 @@
+[plugin]
+enabled = true
+config_version = "1.4.0"
+
+[mood]
+window = 20
+min_new_messages = 3
+willingness_alpha = 0.5
+level_confirm_times = 2
+model = "replyer"
+max_keywords = 5
+pixiv_db_path = ""

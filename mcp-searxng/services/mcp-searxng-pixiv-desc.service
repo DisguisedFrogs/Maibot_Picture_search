@@ -1,0 +1,16 @@
+[Unit]
+Description=Pixiv library image description pre-generation (VLM batch)
+After=network-online.target
+Wants=network-online.target
+
+[Service]
+Type=oneshot
+User=darin
+WorkingDirectory=/home/darin/Projects_WIP/mcp-searxng
+Environment=DASHSCOPE_API_KEY=<你的 dashscope API key>
+ExecStart=/home/darin/Projects_WIP/mcp-searxng/.venv/bin/python /home/darin/Projects_WIP/mcp-searxng/scripts/pixiv_describe.py
+NoNewPrivileges=true
+PrivateTmp=true
+
+[Install]
+WantedBy=multi-user.target
