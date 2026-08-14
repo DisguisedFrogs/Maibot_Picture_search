@@ -1,7 +1,7 @@
 {
   "manifest_version": 2,
   "version": "1.1.0",
-  "name": "maibot-mood 心情插件",
+  "name": "maibot-mood 在线搜索和发图",
   "description": "按群 LLM 分析聊天氛围心情（差/中/好）并持久化，供模型按心情从本地 Pixiv 榜库选图发图",
   "author": {
     "name": "DisguisedFrogs",
@@ -25,8 +25,7 @@
   "dependencies": [],
   "capabilities": [
     "llm.generate",
-    "message.get_recent",
-    "config.get"
+    "message.get_recent"
   ],
   "i18n": {
     "default_locale": "zh-CN",

@@ -1,3 +1,5 @@
+# 插件配置模板：复制为 config.toml 后按需修改。
+# 未提供 config.toml 时 MaiBot 按插件代码默认值自动生成配置，无需手动创建。
 [plugin]
 enabled = true
 config_version = "1.4.0"
